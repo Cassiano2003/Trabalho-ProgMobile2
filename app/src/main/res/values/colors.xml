@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="letras">#FFFFFFFF</color>
+    <color name="fundo_JD">#243d65</color>
+    <color name="fundo_C">#36606e</color>
+    <color name="fundo_V">#3c434a</color>
+    <color name="fundo_M">#0f162b</color>
+</resources>

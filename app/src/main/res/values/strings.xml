@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">BD SAO</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">MENU</string>
+    <string name="second_fragment_label">DUELOS</string>
+    <string name="three_fragment_label">CADASTRO JOGADOR</string>
+    <string name="for_fragment_label">CADASTRO DUELO</string>
+    <string name="five_fragment_label">INFORMAÇOES JOGADORES</string>
+    <string name="six_fragment_label">JOGADORES</string>
+    <string name="seven_fragment_label">INFORMAÇOES DUELOS</string>
+    <string name="descricao">
+        Bem-Vindo ao BD SAO, este é um projeto de faculdade feito pelos alunos de ProgMobile
+        Lucas Lacerda Arruda e Cassiano Carvalho de Souza com a temática do anime Sword Art Online. O
+        objetivo deste app é utilizar das ferramentas de banco de dados (ROOM) do Android Studio para demonstrar o nosso aprendizado
+        na matéria. Aproveite!</string>
+
+    <string-array name="tipos_duelos">
+        <item>Duelo Simples</item>
+        <item>Duelo Contra o Relogio</item>
+        <item>Morte Subita</item>
+    </string-array>
+
+    <string-array name="guildas_do_sao"> <item>Laughing Coffin</item>
+        <item>Dragon Knights Brigade</item>
+        <item>Holy Dragon Alliance</item>
+        <item>Battle Healing</item>
+        <item>Merchant</item>
+        <item>Fairy Dance</item>
+        <item>Mothers Rosario</item>
+        <item>Lua Crescente Negra</item>
+    </string-array>
+
+
+    <string-array name="armas_de_sao">
+        <item>Espada de Uma Mão (Elucidator)</item>
+        <item>Espada de Uma Mão (Dark Repulser)</item>
+        <item>Espada de Uma Mão (Lambent Light)</item>
+        <item>Espada de Uma Mão (Anneal Blade)</item>
+        <item>Rapieira</item>
+        <item>Adaga (Mate Chopper)</item>
+        <item>Machado</item>
+        <item>Maça</item>
+        <item>Martelo</item>
+        <item>Espada Grande</item>
+        <item>Lança</item>
+        <item>Espada Curva</item>
+        <item>Katana</item>
+        <item>Garra</item>
+        <item>Arma de Arremesso</item>
+
+        <item>Espada ALO</item>
+        <item>Rapieira ALO</item>
+        <item>Arco ALO</item>
+        <item>Cajado/Bastão ALO</item>
+
+        <item>Pistola (FN Five-seveN)</item>
+        <item>Pistola (HK45)</item>
+        <item>Pistola (.357 Magnum)</item>
+        <item>Submetralhadora (P90 - P-chan)</item>
+        <item>Fuzil de Assalto (M14 EBR)</item>
+        <item>Fuzil de Precisão (Hecate II)</item>
+        <item>Lança-Granadas</item>
+        <item>Metralhadora Leve</item>
+        <item>Espada de Fótons (Kagemitsu G4)</item>
+        <item>Faca de Combate</item>
+
+        <item>Espada Divina (Blue Rose Sword)</item>
+        <item>Espada Divina (Night Sky Sword)</item>
+        <item>Espada Divina (Fragrant Olive Sword)</item>
+        <item>Espada Divina (Heaven Piercing Sword)</item>
+        <item>Lança de Underworld</item>
+        <item>Arco de Underworld</item>
+        <item>Machado de Underworld</item>
+        <item>Chicote de Underworld</item>
+    </string-array>
+</resources>

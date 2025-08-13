@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_C"
+    tools:context=".FourFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+        <Spinner
+            android:id="@+id/plauer01"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Player 1"
+            tools:layout_editor_absoluteX="16dp"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titulo2"/>
+
+        <Spinner
+            android:id="@+id/plauer02"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Player 2"
+            tools:layout_editor_absoluteX="16dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="70dp"
+            app:layout_constraintTop_toBottomOf="@id/titulo2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/vs"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VS"
+            android:textSize="50dp"
+            android:fontFamily="@font/saouibold"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="41dp"
+            app:layout_constraintTop_toTopOf="@id/plauer01"
+            app:layout_constraintBottom_toBottomOf="@id/plauer02"
+            app:layout_constraintLeft_toRightOf="@id/plauer01"
+            app:layout_constraintRight_toLeftOf="@id/plauer02"/>
+
+        <ImageView
+            android:id="@+id/image_duelos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="366dp"
+            android:textColor="@color/white"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginTop="10dp"
+            app:layout_constraintRight_toRightOf="@id/tipo_duelos"
+            app:layout_constraintLeft_toLeftOf="@id/tipo_duelos"
+            app:layout_constraintTop_toBottomOf="@id/tipo_duelos"/>
+
+        <Spinner
+            android:id="@+id/tipo_duelos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteY="146dp"
+            android:layout_marginTop="90dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plauer01"/>
+
+        <EditText
+            android:id="@+id/data"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Data"
+            android:layout_marginTop="30dp"
+            android:focusable="false"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/pontos_p2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/tempo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Tempo Limite"
+            android:layout_marginTop="30dp"
+            android:focusable="false"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/pontos_p2"
+            app:layout_constraintLeft_toRightOf="@id/data"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/titulo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOVO DUELO"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:fontFamily="@font/saouibold"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="113dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <Button
+            android:id="@+id/salvar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SALVAR       "
+            android:textSize="20dp"
+            android:fontFamily="@font/saouibold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/iconsave"
+            app:layout_constraintTop_toBottomOf="@id/tx_vencedor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="694dp" />
+
+        <TextView
+            android:id="@+id/tx_tipos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipos de Duelos"
+            android:textSize="20dp"
+            android:fontFamily="@font/saouibold"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="196dp"
+            app:layout_constraintBottom_toTopOf="@id/tipo_duelos"
+            app:layout_constraintLeft_toLeftOf="@id/tipo_duelos"/>
+
+        <TextView
+            android:id="@+id/tx_vencedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vencedor"
+            android:textSize="20dp"
+            android:fontFamily="@font/saouibold"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            tools:layout_editor_absoluteX="195dp"
+            tools:layout_editor_absoluteY="596dp"
+            app:layout_constraintTop_toBottomOf="@id/tempo"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/pontos_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Pontos Player 1"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="564dp"
+            app:layout_constraintTop_toBottomOf="@id/image_duelos"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/pontos_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pontos Player 2"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="500dp"
+            app:layout_constraintTop_toBottomOf="@id/pontos_p1"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

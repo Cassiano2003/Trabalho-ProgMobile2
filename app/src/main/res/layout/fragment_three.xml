@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_C"
+    tools:context=".ThreeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+
+        <Button
+            android:id="@+id/salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SALVAR       "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/iconsave"
+            android:fontFamily="@font/saouibold"
+            android:backgroundTint="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/adiciona"/>
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginTop="30dp"
+            android:hint="Nome"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="17dp"
+            app:layout_constraintTop_toBottomOf="@id/titulo"
+            app:layout_constraintLeft_toRightOf="@id/imageButton"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Nick"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="86dp"
+            app:layout_constraintTop_toBottomOf="@id/nome"
+            app:layout_constraintLeft_toRightOf="@id/imageButton"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/idade"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Idade"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageButton"/>
+
+        <EditText
+            android:id="@+id/level"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Level"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/idade"
+            app:layout_constraintRight_toLeftOf="@id/masculino"
+            app:layout_constraintBaseline_toBaselineOf="@id/idade"
+            />
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_marginTop="30dp"
+            tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titulo"/>
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:fontFamily="@font/saouibold"
+            android:text="NOVO JOGADOR"
+            tools:layout_editor_absoluteX="82dp"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteY="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <RadioButton
+            android:id="@+id/masculino"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Masculino"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="350dp"
+            android:textColor="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/feminino"/>
+
+        <RadioButton
+            android:id="@+id/feminino"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Feminino"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="402dp"
+            android:textColor="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/masculino"
+            app:layout_constraintBaseline_toBottomOf="@id/idade"/>
+
+        <Spinner
+            android:id="@+id/guidas"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/feminino"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <Spinner
+            android:id="@+id/armas"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/guidas"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <Button
+            android:id="@+id/adiciona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/habilidades"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <Button
+            android:id="@+id/menos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="-"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/adiciona"
+            app:layout_constraintTop_toBottomOf="@id/habilidades" />
+
+        <LinearLayout
+            android:id="@+id/habilidades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toBottomOf="@id/idade"
+            app:layout_constraintStart_toStartOf="parent" >
+
+            <Spinner
+                android:id="@+id/spinnerH"
+                android:layout_width="150dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="329dp"
+                android:layout_marginTop="30dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_habilidades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habilidades"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:fontFamily="@font/saouibold"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="368dp"
+            app:layout_constraintBottom_toTopOf="@id/habilidades"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="@id/habilidades"
+            />
+
+        <TextView
+            android:id="@+id/tx_guidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUIDAS"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="322dp"
+            tools:layout_editor_absoluteY="357dp"
+            app:layout_constraintStart_toStartOf="@id/guidas"
+            app:layout_constraintBottom_toTopOf="@id/guidas"/>
+
+        <TextView
+            android:id="@+id/tx_armas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARMAS"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="322dp"
+            tools:layout_editor_absoluteY="357dp"
+            app:layout_constraintStart_toStartOf="@id/armas"
+            app:layout_constraintBottom_toTopOf="@id/armas"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
